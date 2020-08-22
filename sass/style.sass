@@ -1,0 +1,566 @@
+@import variables
+
+
+/*=========Header=========*/
+
+.menu-wrap
+    position: fixed
+    z-index: 500
+    background-color: $mainColorBlack
+    width: 100%
+    height: auto
+    .container
+        padding: 0
+    .navbar
+        padding-top: 31px
+        padding-bottom: 32px
+    .navbar-color
+        padding-left: 0
+        padding-right: 0
+        .navbar-brand
+            padding-top: 0
+            padding-bottom: 0
+            color: $mainColorWhite
+            font-family: $RalewayExtraBold, sans-serif
+            font-size: 24px
+        .nav-link
+            color: $mainColorWhite
+            text-transform: uppercase
+            font-family: $OswaldRegular, sans-serif
+            font-size: 14px
+        
+    .navbar-expand-lg
+        justify-content: space-between
+    .navbar-collapse
+        flex-grow: unset
+    .nav-item
+        margin-left: 34px
+        &.active
+            background-color: $mainColorRed
+    .nav-link
+        &:hover
+            background-color: $mainColorRed
+            color: $mainColorWhite !important
+/*=======header=======*/
+
+
+
+/*==slider section==*/
+
+.slider
+    padding-top: 100px
+    .slider-img
+        max-width: 100%
+        height: 581px
+        background-size: cover
+        background-position: center
+    .slider-caption
+        &_left
+            position: absolute
+            bottom: 40%
+            left: 10%
+            z-index: 10
+        &__link
+            display: inline-block
+            a
+                font-family: Oswald-Regular, sans-serif
+                font-size: 12px
+                text-transform: uppercase
+                color: #fefefe
+                background-color: #e25050
+                padding: 8px
+                display: block
+        &__title
+            font-size: 30px
+            font-family: $OswaldBold, sans-serif
+            color: $mainColorWhite
+            background-color: $sliderTitleBgcBlack
+            text-transform: uppercase
+            padding: 5px 18px
+            margin-top: 2px
+            &:last-child
+                display: inline-block
+                font-size: 18px
+                font-family: $OswaldRegular, sans-serif
+        &_right
+            position: absolute
+            top: 0
+            right: 10%
+            z-index: 10
+            display: flex
+            a
+                padding: 9px 27px 10px
+                display: block
+
+        &__phone
+            position: relative
+            width: 37px
+            height: 37px
+            background-color: #bd4141
+            display: block 
+            img
+                position: absolute
+                top: 11px
+                left: 11px
+    .carousel-indicators
+        li
+            width: 10px
+            height: 10px
+            border-radius: 50%
+/*==slider section==*/
+
+
+
+/*===welcome section===*/
+.welcome
+    .welcome-title_center
+        text-align: center
+        padding-top: 55px
+    &__title
+        font-family: $OswaldBold, sans-serif
+        font-size: 30px
+        color: $mainColorBlack
+        text-transform: uppercase
+        span
+            color: $mainColorRed
+    &__subtitle
+        font-family: $DroidSerifItalic, sans-serif
+        font-size: 16px
+        color: #a2a2a2
+    .welcome-item
+        &__img
+            position: relative
+            width: 74px
+            height: 74px
+            margin: 0 auto 30px
+            &::before
+                content: url("../images/welcom-item-angle.png")
+                width: 74px
+                height: 74px
+            &::after
+                content: url("../images/welcom-item-bottom-icon.png")
+                width: 38px
+                height: 28px
+                position: absolute
+                bottom: -20px
+                left: 17.7px
+            .welcome-item-icon
+                position: absolute
+                top: 26px
+                left: 28px
+        &__title
+            color: $mainColorBlack
+            font-family: $OswaldBold, sans-serif
+            font-size: 18px
+            text-align: center
+            text-transform: uppercase
+        &__text
+            font-family: $OpenSans, sans-serif
+            font-size: 13px
+            color: #777777
+            text-align: center
+            margin-top: 27px
+
+    .welcom-block_top
+        margin-top: 46px
+
+.welcome-section
+    padding-bottom: 70px
+/*===welcome section===*/
+
+
+.main-caption
+    text-align: center
+    &__title
+        color: #ffffff
+        font-size: 24px
+        font-family: $OswaldBold, sans-serif
+        text-transform: uppercase
+        &::after
+            content: ''
+            width: 45px
+            height: 1px
+            background-color: $mainColorWhite
+            display: block
+            margin: 4px auto 0
+
+    &.main-caption_black
+        .main-caption__title
+            color: $mainColorBlack
+            &::after
+                background-color: $mainColorBlack
+
+    &__text
+        width: 50%
+        margin: 0 auto
+        font-family: $OpenSans, sans-serif
+        font-size: 12px
+        color: #777777
+        margin-top: 25px
+        margin-bottom: 62px
+    
+
+
+/*===trainers section===*/
+
+.team-section
+    width: 100%
+    background-image: url(../images/team-section-bg-img.png)
+    background-position: center
+    background-size: cover
+    padding-top: 50px
+    padding-bottom: 60px
+    .main-caption
+        margin-bottom: 60px
+
+.team-card-wrap
+    margin-bottom: 30px
+
+.team-card_style
+    .card
+        width: 100% !important
+        border: none
+        border-radius: 0
+        box-shadow: 0 0 5px #726767
+        margin: 0 auto
+        .card-img-top
+            width: 100%
+            border-radius: 0
+        .card-body
+            .card-title
+                color: $mainColorBlack
+                font-size: 14px
+                font-family: $OswaldBold, sans-serif
+                text-transform: uppercase
+                margin-bottom: 0.20rem
+            .card-text
+                color: #afafaf
+                font-size: 12px
+                font-family: $OswaldRegular, sans-serif
+                text-transform: uppercase
+        .card-info
+            width: 100%
+            height: 100%
+            background-color: #ffffff
+            position: absolute
+            top: 0
+            opacity: 0
+            transition: opacity .5s
+            &:hover
+                opacity: 1
+            &__text
+                margin-top: 20px
+                color: #777777
+                font-size: 13px
+                font-family: $OpenSans, sans-serif
+            .card-sotial-links
+                margin-top: 50px
+                display: flex
+                justify-content: space-evenly
+                list-style: none
+                padding: 0
+                margin-bottom: 0
+                a
+                    color: #afafaf
+                    &:hover
+                        color: $mainColorRed
+
+
+/*===Galery section===*/
+.gallery-section
+    padding-top: 70px
+    padding-bottom: 60px            
+    .card
+        box-shadow: none
+        .card-body
+            padding-bottom: 0
+
+
+/* galery card Global Style */
+.card-img-info-wrap
+    position: relative
+    .card-info
+        background-image: linear-gradient(to bottom right, $mainColorRed, $mainColorRed)     
+    .galery-search
+        display: block
+        position: absolute
+        left: 40%
+        bottom: 40%
+        opacity: 0
+        transition: opacity .5s
+    &:hover
+        .card-info
+            opacity: 0.6 !important
+        .galery-search
+            opacity: 1
+/* galery card Global Style */
+
+/* Price section */
+.price-section
+    width: 100%
+    background-color: $mainColorRed
+    padding-top: 70px
+    padding-bottom: 60px
+    .main-caption
+        margin-bottom: 60px
+
+.price-card
+    color: $mainColorWhite
+    text-align: center
+    background-color: #d14343
+    padding-top: 50px
+    padding-bottom: 59px
+    border: 2px solid $transparents
+    &__title
+        font-size: 18px
+        font-family: $OswaldBold, sans-serif
+        text-transform: uppercase
+        margin-bottom: 35px
+    &__price
+        font-size: 33px
+        font-family: $OswaldBold, sans-serif
+        text-transform: uppercase
+        padding-bottom: 26px
+        span
+            top: -20px
+            left: 3px
+            position: relative
+            font-size: 14px
+    &__subtitle
+        font-size: 14px
+        font-family: $OpenSans, sans-serif
+        margin-top: 20px
+    .price-active-icon
+        margin-right: 30px
+        vertical-align: 2px
+    .price-btn
+        margin-top: 28px
+        color: $mainColorWhite
+        font-size: 18px
+        font-family: $OswaldBold, sans-serif
+        text-transform: uppercase
+        background-color: $mainColorRed
+        border-radius: 0
+        padding: 10px 65px
+        &:hover
+            box-shadow: 0 0 3px #cccccc
+        &:active
+            transform: scale(0.97)
+    &.active
+        background-color: $mainColorRed
+        border: 2px solid $mainColorWhite
+        .price-btn
+            color: $mainColorRed
+            background-color: $mainColorWhite
+
+
+/* Partners section */
+
+.partners-section
+    padding-top: 60px
+    padding-bottom: 48px
+    .main-caption
+        margin-bottom: 60px
+
+.partnes-block-img-style
+    text-align: center
+    margin-bottom: 35px
+
+
+/* == footer-section == */
+.footer-section
+    width: 100%
+    background-size: cover
+    background-position: center
+    background-image: url(../images/footer-bg-img.png)
+    padding-top: 35px
+    padding-bottom: 37px
+
+.footer-item
+    display: flex
+
+.footer-icon
+    color: $mainColorWhite
+    font-size: 30px
+    margin-right: 25px
+    &::before
+        vertical-align: -5px
+
+.footer-links-text
+    color: $mainColorWhite
+    font-size: 13px
+    font-family: $OpenSansLight, sans-serif
+.footer-links-date
+    color: #717171
+.footer-item_right
+    .card-sotial-links
+        display: flex
+        justify-content: space-evenly
+        list-style: none
+        li
+            a
+                color: $mainColorWhite
+                &:hover
+                    color: $mainColorRed
+.footer-links_border-bottom
+    border-bottom: 1px solid #323232
+    margin-bottom: 30px
+
+.contact-wrap
+    .footer-title
+        margin-bottom: 25px
+
+.footer-title
+    color: $mainColorWhite
+    font-size: 14px
+    font-family: $OswaldBold, sans-serif
+    text-transform: uppercase
+.footer-text
+    max-width: 300px
+    margin-bottom: 27px
+    color: #c6c6c6
+    font-size: 12px
+    font-family: $OpenSansLight, sans-serif
+.footer-contact
+    margin-top: 2px
+    color: #c6c6c6
+    font-size: 12px
+    font-family: $OpenSansLight, sans-serif
+    img
+        margin-right: 12px
+        vertical-align: -1px
+
+.form-wrap
+    .footer-title
+        margin-bottom: 28px
+
+.form-input
+    width: 100%
+    color: #656565
+    background-color: $transparents
+    padding: 7px 11px
+    margin-bottom: 16px
+    border: 1px solid #4f4f4f
+    font-size: 12px
+    font-family: $OswaldRegular, sans-serif
+    &::placeholder
+        text-transform: uppercase
+
+
+.form-textarea
+    width: 100%
+    height: 109px
+    color: #656565
+    font-size: 12px
+    padding: 7px 11px
+    font-family: $OswaldRegular, sans-serif
+    background-color: $transparents
+    border: 1px solid #4f4f4f
+    &::placeholder
+        text-transform: uppercase
+
+.contact-wrap, .form-wrap
+    padding-top: 30px
+
+.form-button
+    width: 100%
+    color: $mainColorWhite
+    background-color: $mainColorRed
+    font-size: 14px
+    font-family: $OswaldRegular, sans-serif
+    text-transform: uppercase
+    border-radius: 0
+    padding-right: 30px
+    position: relative
+    &::before
+        content: ''
+        width: 7px
+        height: 13px
+        top: 10.75px
+        right: 22px
+        position: absolute
+        background-image: url(../images/button-angle-icon.png)
+    &:hover
+        color: $mainColorWhite
+    &:active
+        transform: scale(0.98)
+
+.form-info-title
+    margin-top: 17px
+    color: #707070
+    font-size: 12px
+    font-family: $OpenSansLight, sans-serif
+    &.info-title_style
+        margin-top: 0
+
+
+
+/* copyright */      
+.copyright
+    padding-top: 90px
+
+
+.back-to-top
+    color: $mainColorRed
+    font-size: 12px
+    font-family: $OpenSansLight, sans-serif
+    text-decoration: underline
+    &:hover
+        color: $mainColorRed
+
+/* Large Devices, Wide Screens */
+@media only screen and (mix-width : 992px) and (max-width : 1200px)
+
+/* Medium Devices, Desktops */
+@media only screen and (mix-width : 768px) and (max-width : 991px)
+/*==Price section==*/
+.price-card
+    margin-bottom: 25px
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 280px) and (max-width : 767px)
+    .menu-wrap
+        .navbar-color
+            padding-left: 15px
+            padding-right: 15px
+        .navbar-nav
+            margin-top: 25px
+            .nav-item
+                margin-left: 0
+                .nav-link
+                    padding-left: 16px
+    .slider
+        .slider-img
+            height: 300px
+            background-position: 740px 0
+        .slider-caption
+            &__title
+                font-size: 25px
+            &_left
+                position: absolute
+                bottom: 13%
+                left: 12%
+                z-index: 10
+
+    /*==Galery section==*/
+    .gallery-section
+        .card-img-info-wrap 
+            .galery-search
+                left: 43%
+                bottom: 43%
+        .main-caption
+            &__text
+                width: 90%
+
+/*== footer ==*/
+
+
+
+    
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 260px) and (max-width : 279px)
+.slider
+    .slider-caption
+        &__title
+            font-size: 17px
