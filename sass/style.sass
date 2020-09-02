@@ -14,9 +14,16 @@
     .navbar
         padding-top: 31px
         padding-bottom: 32px
+        @media (max-width: 991.98px)
+            padding-top: 25px
+            padding-bottom: 25px
+        @media (max-width: 575.98px)
+            padding-top: 20px
+            padding-bottom: 20px
+    .navbar-nav
+        @media (max-width: 991.98px)
+            margin-top: 15px
     .navbar-color
-        padding-left: 0
-        padding-right: 0
         .navbar-brand
             padding-top: 0
             padding-bottom: 0
@@ -28,6 +35,8 @@
             text-transform: uppercase
             font-family: $OswaldRegular, sans-serif
             font-size: 14px
+            @media (max-width: 991.98px)
+                padding-left: 15px
         
     .navbar-expand-lg
         justify-content: space-between
@@ -49,17 +58,29 @@
 
 .slider
     padding-top: 100px
+    @media (max-width: 991.98px)
+        padding-top: 90px
+    @media (max-width: 575.98px)
+        padding-top: 80px
     .slider-img
         max-width: 100%
         height: 581px
         background-size: cover
         background-position: center
+        @media (max-width: 991.98px)
+            height: 500px
+        @media (max-width: 575.98px)
+            height: 350px
+            background-position: -73% center
+        
     .slider-caption
         &_left
             position: absolute
             bottom: 40%
             left: 10%
             z-index: 10
+            @media (max-width: 575.98px)
+                bottom: 15%
         &__link
             display: inline-block
             a
@@ -70,6 +91,8 @@
                 background-color: #e25050
                 padding: 8px
                 display: block
+                @media (max-width: 575.98px)
+                    font-size: 10px
         &__title
             font-size: 30px
             font-family: $OswaldBold, sans-serif
@@ -78,10 +101,14 @@
             text-transform: uppercase
             padding: 5px 18px
             margin-top: 2px
+            @media (max-width: 575.98px)
+                font-size: 18px
             &:last-child
                 display: inline-block
                 font-size: 18px
                 font-family: $OswaldRegular, sans-serif
+                @media (max-width: 575.98px)
+                    font-size: 15px
         &_right
             position: absolute
             top: 0
@@ -91,6 +118,8 @@
             a
                 padding: 9px 27px 10px
                 display: block
+            @media (max-width: 575.98px)
+                right: 0
 
         &__phone
             position: relative
@@ -98,6 +127,9 @@
             height: 37px
             background-color: #bd4141
             display: block 
+            @media (max-width: 575.98px)
+                width: 34px
+                height: 34px
             img
                 position: absolute
                 top: 11px
@@ -116,17 +148,25 @@
     .welcome-title_center
         text-align: center
         padding-top: 55px
+        @media (max-width: 991.98px)
+            padding-top: 30px
+        @media (max-width: 575.98px)
+            padding-top: 20px
     &__title
         font-family: $OswaldBold, sans-serif
         font-size: 30px
         color: $mainColorBlack
         text-transform: uppercase
+        @media (max-width: 575.98px)
+            font-size: 26px
         span
             color: $mainColorRed
     &__subtitle
         font-family: $DroidSerifItalic, sans-serif
         font-size: 16px
         color: #a2a2a2
+        @media (max-width: 575.98px)
+            font-size: 14px
     .welcome-item
         &__img
             position: relative
@@ -154,18 +194,29 @@
             font-size: 18px
             text-align: center
             text-transform: uppercase
+            @media (max-width: 575.98px)
+                font-size: 20px
         &__text
             font-family: $OpenSans, sans-serif
             font-size: 13px
             color: #777777
             text-align: center
             margin-top: 27px
+            @media (max-width: 575.98px)
+                margin-top: 15px
+                font-size: 15px
 
     .welcom-block_top
         margin-top: 46px
+        @media (max-width: 575.98px)
+            margin-top: 30px
 
 .welcome-section
     padding-bottom: 70px
+    @media (max-width: 991.98px)
+        padding-bottom: 50px
+    @media (max-width: 575.98px)
+        padding-bottom: 30px
 /*===welcome section===*/
 
 
@@ -198,6 +249,13 @@
         color: #777777
         margin-top: 25px
         margin-bottom: 62px
+        @media (max-width: 991.98px)
+            margin-bottom: 40px
+        @media (max-width: 575.98px)
+            width: 100%
+            font-size: 11px
+            margin-top: 15px
+            margin-bottom: 25px
     
 
 
@@ -210,11 +268,21 @@
     background-size: cover
     padding-top: 50px
     padding-bottom: 60px
+    @media (max-width: 991.98px)
+        padding-top: 40px
+        padding-bottom: 40px
+    @media (max-width: 575.98px)
+        padding-top: 20px
+        padding-bottom: 20px
     .main-caption
         margin-bottom: 60px
+        @media (max-width: 575.98px)
+            margin-bottom: 30px
 
 .team-card-wrap
     margin-bottom: 30px
+    @media (max-width: 575.98px)
+        margin-bottom: 15px
 
 .team-card_style
     .card
@@ -233,11 +301,15 @@
                 font-family: $OswaldBold, sans-serif
                 text-transform: uppercase
                 margin-bottom: 0.20rem
+                @media (max-width: 575.98px)
+                    font-size: 18px
             .card-text
                 color: #afafaf
                 font-size: 12px
                 font-family: $OswaldRegular, sans-serif
                 text-transform: uppercase
+                @media (max-width: 575.98px)
+                    font-size: 16px
         .card-info
             width: 100%
             height: 100%
@@ -253,6 +325,8 @@
                 color: #777777
                 font-size: 13px
                 font-family: $OpenSans, sans-serif
+                @media (max-width: 991.98px)
+                    font-size: 17px
             .card-sotial-links
                 margin-top: 50px
                 display: flex
@@ -260,8 +334,13 @@
                 list-style: none
                 padding: 0
                 margin-bottom: 0
+                @media (max-width: 575.98px)
+                    justify-content: space-between
                 a
                     color: #afafaf
+                    @media (max-width: 575.98px)
+                        & i
+                            font-size: 25px
                     &:hover
                         color: $mainColorRed
 
@@ -269,7 +348,12 @@
 /*===Galery section===*/
 .gallery-section
     padding-top: 70px
-    padding-bottom: 60px            
+    padding-bottom: 60px 
+    @media (max-width: 991.98px)
+        padding-top: 50px
+        padding-bottom: 20px
+    @media (max-width: 575.98px)
+        padding-top: 20px           
     .card
         box-shadow: none
         .card-body
@@ -288,6 +372,11 @@
         bottom: 40%
         opacity: 0
         transition: opacity .5s
+        @media (max-width: 575.98px)
+            left: 44%
+            & img
+                width: 50px
+                height: 50px
     &:hover
         .card-info
             opacity: 0.6 !important
@@ -301,8 +390,18 @@
     background-color: $mainColorRed
     padding-top: 70px
     padding-bottom: 60px
+    @media (max-width: 991.98px)
+        padding-top: 50px
+        padding-bottom: 50px
+    @media (max-width: 575.98px)
+        padding-top: 20px
+        padding-bottom: 20px
     .main-caption
         margin-bottom: 60px
+        @media (max-width: 991.98px)
+            margin-bottom: 50px
+        @media (max-width: 575.98px)
+            margin-bottom: 30px
 
 .price-card
     color: $mainColorWhite
@@ -311,16 +410,26 @@
     padding-top: 50px
     padding-bottom: 59px
     border: 2px solid $transparents
+    @media (max-width: 991.98px)
+        margin-bottom: 20px
+    @media (max-width: 575.98px)
+        margin-bottom: 15px
+        padding-top: 25px
+        padding-bottom: 25px
     &__title
         font-size: 18px
         font-family: $OswaldBold, sans-serif
         text-transform: uppercase
         margin-bottom: 35px
+        @media (max-width: 575.98px)
+            margin-bottom: 15px
     &__price
         font-size: 33px
         font-family: $OswaldBold, sans-serif
         text-transform: uppercase
         padding-bottom: 26px
+        @media (max-width: 575.98px)
+            padding-bottom: 0
         span
             top: -20px
             left: 3px
@@ -330,6 +439,9 @@
         font-size: 14px
         font-family: $OpenSans, sans-serif
         margin-top: 20px
+        @media (max-width: 575.98px)
+            font-size: 12px
+            margin-top: 10px
     .price-active-icon
         margin-right: 30px
         vertical-align: 2px
@@ -342,6 +454,10 @@
         background-color: $mainColorRed
         border-radius: 0
         padding: 10px 65px
+        @media (max-width: 575.98px)
+            margin-top: 15px
+            font-size: 16px
+            padding: 4px 40px
         &:hover
             box-shadow: 0 0 3px #cccccc
         &:active
@@ -359,12 +475,25 @@
 .partners-section
     padding-top: 60px
     padding-bottom: 48px
+    @media (max-width: 991.98px)
+        padding-top: 35px
+        padding-bottom: 20px
+    @media (max-width: 575.98px)
+        padding-top: 20px
+        padding-bottom: 0
+        
     .main-caption
         margin-bottom: 60px
+        @media (max-width: 991.98px)
+            margin-bottom: 40px
+        @media (max-width: 575.98px)
+            margin-bottom: 20px
 
 .partnes-block-img-style
     text-align: center
     margin-bottom: 35px
+    @media (max-width: 575.98px)
+        margin-bottom: 25px
 
 
 /* == footer-section == */
@@ -375,6 +504,9 @@
     background-image: url(../images/footer-bg-img.png)
     padding-top: 35px
     padding-bottom: 37px
+    @media (max-width: 575.98px)
+        padding-top: 25px
+        padding-bottom: 20px
 
 .footer-item
     display: flex
@@ -397,30 +529,44 @@
         display: flex
         justify-content: space-evenly
         list-style: none
+        @media (max-width: 575.98px)
+            justify-content: space-between
+            padding-left: 5px
+            padding-right: 5px
         li
             a
                 color: $mainColorWhite
+                @media (max-width: 575.98px)
+                    & i
+                        font-size: 25px
                 &:hover
                     color: $mainColorRed
 .footer-links_border-bottom
     border-bottom: 1px solid #323232
     margin-bottom: 30px
+    @media (max-width: 575.98px)
+        margin-bottom: 0
 
 .contact-wrap
     .footer-title
         margin-bottom: 25px
+        @media (max-width: 575.98px)
+            margin-bottom: 15px
 
 .footer-title
     color: $mainColorWhite
     font-size: 14px
     font-family: $OswaldBold, sans-serif
     text-transform: uppercase
+
 .footer-text
     max-width: 300px
     margin-bottom: 27px
     color: #c6c6c6
     font-size: 12px
     font-family: $OpenSansLight, sans-serif
+    @media (max-width: 575.98px)
+        margin-bottom: 20px
 .footer-contact
     margin-top: 2px
     color: #c6c6c6
@@ -433,6 +579,8 @@
 .form-wrap
     .footer-title
         margin-bottom: 28px
+        @media (max-width: 575.98px)
+            margin-bottom: 15px
 
 .form-input
     width: 100%
@@ -461,6 +609,8 @@
 
 .contact-wrap, .form-wrap
     padding-top: 30px
+    @media (max-width: 575.98px)
+        padding-top: 20px
 
 .form-button
     width: 100%
@@ -498,6 +648,10 @@
 /* copyright */      
 .copyright
     padding-top: 90px
+    @media (max-width: 991.98px)
+        padding-top: 55px
+    @media (max-width: 575.98px)
+        padding-top: 20px
 
 
 .back-to-top
@@ -508,59 +662,20 @@
     &:hover
         color: $mainColorRed
 
-/* Large Devices, Wide Screens */
-@media only screen and (mix-width : 992px) and (max-width : 1200px)
-
-/* Medium Devices, Desktops */
-@media only screen and (mix-width : 768px) and (max-width : 991px)
-/*==Price section==*/
-.price-card
-    margin-bottom: 25px
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 280px) and (max-width : 767px)
-    .menu-wrap
-        .navbar-color
-            padding-left: 15px
-            padding-right: 15px
-        .navbar-nav
-            margin-top: 25px
-            .nav-item
-                margin-left: 0
-                .nav-link
-                    padding-left: 16px
-    .slider
-        .slider-img
-            height: 300px
-            background-position: 740px 0
-        .slider-caption
-            &__title
-                font-size: 25px
-            &_left
-                position: absolute
-                bottom: 13%
-                left: 12%
-                z-index: 10
-
-    /*==Galery section==*/
-    .gallery-section
-        .card-img-info-wrap 
-            .galery-search
-                left: 43%
-                bottom: 43%
-        .main-caption
-            &__text
-                width: 90%
-
-/*== footer ==*/
 
 
 
-    
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 260px) and (max-width : 279px)
-.slider
-    .slider-caption
-        &__title
-            font-size: 17px
+
+
+
+
+@media (max-width: 575.98px)
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px)
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px)
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px)
