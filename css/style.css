@@ -45,6 +45,9 @@
     color: #fefefe;
     font-family: Raleway-ExtraBold, sans-serif;
     font-size: 24px; }
+    .navbar-brand svg:hover{
+      transform: scale(1.04);
+    }
   .menu-wrap .navbar-color .nav-link {
     color: #fefefe;
     text-transform: uppercase;
