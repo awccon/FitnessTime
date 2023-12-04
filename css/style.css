@@ -48,11 +48,11 @@
     .navbar-brand svg:hover{
       transform: scale(1.04);
     }
-    .navbar-brand svg{
-      fill: rgb(0,170,0);
+    /* .navbar-brand svg{
+      fill: #ffffff;
       stroke-width:1;
-      stroke:rgb(0,0,0);
-    }
+      stroke:rgb(236, 236, 224);
+    } */
   .menu-wrap .navbar-color .nav-link {
     color: #fefefe;
     text-transform: uppercase;
