@@ -5,3 +5,8 @@ $('.carousel').carousel({
 $(function(){
   new WOW().init();
 })
+
+$(window).ready(function(){
+    let a = $(".footer-links-text");
+    console.log(a.text());
+})
