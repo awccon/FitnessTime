@@ -15,7 +15,7 @@ $(window).ready(function(){
         messageBox.style.top = "50%";
         messageBox.style.left = "50%";
         messageBox.style.transform = "translate(-50%, -50%)";
-        messageBox.innerHTML = `<span>Please go to <a href="https://www.linkedin.com/in/akmalkamolov">this linkedIn link</a> to get a copy of my resume</span>`;
+        messageBox.innerHTML = `<span>Please go to this linkedIn <a href="https://www.linkedin.com/in/akmalkamolov">link</a> to get a copy of my resume</span>`;
         messageBox.style.backgroundColor = "white";
         messageBox.style.padding = "15px";
         closeBtn.style.position = "absolute";
