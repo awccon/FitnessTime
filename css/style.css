@@ -156,10 +156,9 @@
 /*===welcome section=== */
 
 .about-me-title{
+  text-indent: 50px;
   margin-top: 25px;
-  text-wrap-style: balance;
-  text-align: center;
-  
+  text-align: justify;
 }
 
 .welcome .welcome-title_center {
