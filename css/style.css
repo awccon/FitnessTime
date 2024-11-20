@@ -305,7 +305,9 @@
         margin-bottom: 30px; } }
 
 .team-card-wrap {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  width: 255px;
+}
   @media (max-width: 575.98px) {
     .team-card-wrap {
       margin-bottom: 15px; } }
@@ -787,10 +789,21 @@
     max-width: 200px;
     width: 100%;
     transform: translateX(-50%);
+    box-shadow: 0px 10px 20px 0px #878788;
+    border-radius: 50%;
+    overflow: hidden;
   }
 
   .logo-image img {
     width: 100%;
     border-radius: 50%;
-    box-shadow: 0px 10px 20px 0px #878788;
+    transition: all .5s ease-in-out;
+  }
+
+.logo-image:hover{
+
+}
+  .logo-image:hover img {
+    transition: all .5s ease-in-out;
+    transform: scale(1.07);
   }
