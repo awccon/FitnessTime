@@ -279,26 +279,49 @@
                 </div>
                 <div class="col-md-7 form-wrap">
                     <h1 class="footer-title">send me a message</h1>
-                    <form action="" method="POST">
+
+                    <form id="contact-form" method="POST">
                         <div class="row">
-                            <div class="col-md-6 col-lg-4"><input class="form-input form-input__name" type="text"
-                                    name="name" placeholder="your name">
-                            </div>
-                            <div class="col-md-6 col-lg-4"><input class="form-input form-input__email" type="email"
-                                    name="email" placeholder="email address">
-                            </div>
-                            <div class="col-md-6 col-lg-4"><input class="form-input form-input__subject" type="text"
-                                    name="subject" placeholder="subject">
-                            </div>
-                            <div class="col-md-12 col-lg-8">
-                                <textarea class="form-textarea" name="textarea" placeholder="your message"></textarea>
+                            <div class="col-md-6 col-lg-4">
+                                <input class="form-input form-input__name" type="text" name="name" placeholder="Your Name" required>
                             </div>
                             <div class="col-md-6 col-lg-4">
-                                <button class="btn form-button">Submit your message</button>
+                                <input class="form-input form-input__email" type="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <input class="form-input form-input__subject" type="text" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="col-md-12 col-lg-8">
+                                <textarea class="form-textarea" name="message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <button class="btn form-button" type="submit">Submit your message</button>
                                 <div class="form-info-title">Make sure you put a valid email.</div>
                             </div>
                         </div>
                     </form>
+
+<!--                    <form action="" method="POST">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-md-6 col-lg-4"><input class="form-input form-input__name" type="text"-->
+<!--                                    name="name" placeholder="your name">-->
+<!--                            </div>-->
+<!--                            <div class="col-md-6 col-lg-4"><input class="form-input form-input__email" type="email"-->
+<!--                                    name="email" placeholder="email address">-->
+<!--                            </div>-->
+<!--                            <div class="col-md-6 col-lg-4"><input class="form-input form-input__subject" type="text"-->
+<!--                                    name="subject" placeholder="subject">-->
+<!--                            </div>-->
+<!--                            <div class="col-md-12 col-lg-8">-->
+<!--                                <textarea class="form-textarea" name="textarea" placeholder="your message"></textarea>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-6 col-lg-4">-->
+<!--                                <button class="btn form-button">Submit your message</button>-->
+<!--                                <div class="form-info-title">Make sure you put a valid email.</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                    -->
                 </div>
             </div>
 
@@ -318,9 +341,35 @@
         </div>
     </div>
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("rRTy2kE9XevX3iDYr"); // Replace with your EmailJS User ID
+        })();
+    </script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="js/js.js"></script>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get form data
+            const serviceID = "service_ni6g6em"; // Replace with your EmailJS service ID
+            const templateID = "template_bmwvghp"; // Replace with your EmailJS template ID
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    alert("Message sent successfully!");
+                    this.reset(); // Reset the form after submission
+                })
+                .catch((error) => {
+                    console.error("Failed to send message:", error);
+                    alert("Failed to send your message. Please try again.");
+                });
+        });
+    </script>
 </body>
 
 </html>
